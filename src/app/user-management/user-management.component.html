@@ -1,0 +1,39 @@
+<div class="page-container">
+    <div class="page-content-wrapper">
+        <div class="page-head">
+            <div class="container">          
+                <div class="page-title"><h1>User Management</h1></div>
+            </div>       
+        </div>
+        <div class="page-content">
+         <div class="container">
+            <ul class="page-breadcrumb breadcrumb">
+                <li><a routerLink="/user/dashboard">Dashboard</a></li>
+                <li><span class="active">User Management</span></li>
+            </ul>
+          <div class="page-content-inner">
+             <div class="row">
+                <div class="col-md-12">
+                    <div class="portlet light portlet-fit bordered">                      
+                      <div class="portlet-body">
+                          <div class="table-toolbar">
+                              <div class="row">
+                                  <div class="col-md-6">
+                                      <div class="btn-group">
+                                          <button id="sample_editable_1_new" class="btn green"> Add New
+                                              <i class="fa fa-plus"></i>
+                                          </button>
+                                      </div>
+                                  </div>                                  
+                              </div>
+                          </div>
+                          <table datatable [dtOptions]="dtOptions" class="row-border hover" id="user-list"></table>
+                      </div>
+                  </div>
+                </div>
+             </div>
+          </div>
+         </div>
+      </div>    
+  </div>
+</div>
